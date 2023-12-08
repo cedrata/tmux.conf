@@ -16,7 +16,9 @@ Once the directory is cloned append the following content to your `.zshrc` or `.
 ```bash
 # tmux variables
 export TSESH_DIRS="$HOME/Dev $HOME/.config"
-tmux set-environment -g TSESH_DIRS "$TSESH_DIRS"
+if [[ -n "$TMUX" ]]; then
+    tmux set-environment -g TSESH_DIRS "$TSESH_DIRS"
+fi
 
 ```
 Those are required in order to make the script sessionizer script work properly.
