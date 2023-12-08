@@ -7,5 +7,8 @@ To make this configuration working some dependencies are required:
 - [fzf](https://github.com/junegunn/fzf)
 
 # Installing
-Type in your terminal `$ git clone https://github.com/cedrata/tmux.conf.git ~/.config/tmux`
+Type in your terminal 
+```bash
+$ git clone https://github.com/cedrata/tmux.conf.git ~/.config/tmux
+```
 Now you're ready to go!
