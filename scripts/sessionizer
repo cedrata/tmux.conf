@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find $(echo "$TMUX_SESSIONIZER_DIRS" | tr ' ' '\n') -maxdepth 1 -type d | fzf-tmux -p)
+    selected=$(find $(echo "$TSESH_DIRS" | tr ' ' '\n') -maxdepth 1 -type d | fzf-tmux -p)
 fi
 
 if [[ -z $selected ]]; then
