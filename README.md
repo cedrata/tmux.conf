@@ -11,4 +11,14 @@ Type in your terminal
 ```bash
 $ git clone https://github.com/cedrata/tmux.conf.git ~/.config/tmux
 ```
+
+Once the directory is cloned append the following content to your `.zshrc` or `.bashrc` replacing the values of `TSESH_DIRS` with the directories where you want to apply the `find` command.
+```bash
+# tmux variables
+export TSESH_DIRS="$HOME/Dev $HOME/.config"
+tmux set-environment -g TSESH_DIRS "$TSESH_DIRS"
+
+```
+Those are required in order to make the script sessionizer script work properly.
+
 Now you're ready to go!
