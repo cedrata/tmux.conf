@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/Dev -d 2 -type d | fzf-tmux -p)
+    selected=$(find ~/Dev/personal ~/Dev/enel ~/Dev/work ~/.config -d 1 -type d | fzf-tmux -p)
 fi
 
 if [[ -z $selected ]]; then
